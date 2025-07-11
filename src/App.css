@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  text-align: center;
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 12px;
+  justify-content: center;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.square:hover {
+  background-color: #e8e8e8;
+  transform: scale(1.05);
+}
+
+.restart-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.restart-button:hover {
+  background-color: #666;
+}
+
+.winner {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px #4caf50;
+}
+
+.mode-selection {
+  margin-bottom: 20px;
+}
+
+.mode-selection button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 2px solid #444;
+  background-color: white;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.mode-selection button.selected {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+
